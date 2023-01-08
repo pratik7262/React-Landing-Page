@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <Box
       sx={{
-        backgroundImage: "url('images/cover5.jpeg')",
+        backgroundImage: "url('https://source.unsplash.com/random')",
         backgroundRepeat: "no-repeat",
         backgroundPositionY: { xs: "", md: "-250px" },
         backgroundSize: { xs: "100% 525px", md: "100%" },

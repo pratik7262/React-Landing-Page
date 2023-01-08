@@ -1,9 +1,11 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import { GiClawHammer, GiPriceTag } from "react-icons/gi";
+import { GrAnnounce } from "react-icons/gr";
 import { center, alignCenter } from "../../styles/commonStyles";
 import { Btn, Highlighter } from "../common";
 
-const GridItem = ({ num, img, text }) => {
+const GridItem = ({ num, icon, text }) => {
   return (
     <Grid
       xs={12}
@@ -20,13 +22,9 @@ const GridItem = ({ num, img, text }) => {
       >
         {num}.
       </Typography>
-      <img
-        src={`/images/workPage/${img}`}
-        height="55px"
-        style={{ margin: "32px 0" }}
-        width="55px"
-        alt="img"
-      />
+      <Box height='55px' my={6} width='55px'>
+        {icon}
+      </Box>
       <Typography fontFamily="work sans " textAlign="center" variant="h3">
         {text}
       </Typography>
@@ -65,17 +63,17 @@ const WorkPage = () => {
         >
           <GridItem
             num="1"
-            img="productHowItWorks1.svg"
+            icon={<GiClawHammer size={55}/>}
             text="Appointment every Wednesday 9am."
           />
           <GridItem
             num="2"
-            img="productHowItWorks2.svg"
+            icon={<GiPriceTag size={55}/>}
             text="First come, first served. Our offers are in limited quantities, so be quick."
           />
           <GridItem
             num="3"
-            img="productHowItWorks3.svg"
+            icon={<GrAnnounce size={55}/>}
             text="New offers every week. New experiences, new surprises. Your Sundays will no longer be alike."
           />
         </Grid>
