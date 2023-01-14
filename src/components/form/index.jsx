@@ -52,7 +52,7 @@ const Form = () => {
           item
           lg={6}
         >
-          <img src="images/hotel.webp" alt="img" height="100%" width="100%" />
+          <img src="https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?ca=6&ce=1&s=1024x768" alt="img" height="100%" width="100%" />
         </Grid>
       </Grid>
     </Container>
