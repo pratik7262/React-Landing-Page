@@ -17,7 +17,6 @@ const Help = () => {
         <Typography fontFamily="work sans " sx={{margin:'24px 0'}} variant="h3">
           We are here to help. Get in touch!
         </Typography>
-        <img src="/images/producBuoy.svg" alt="img" height='60px' width='60px'/>
       </Container>
     </Box>
   );
